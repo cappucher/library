@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📚 Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>Library</div>
+  </header>
+  <main>
+    <button id = "addBook">+ Add Book</button>
+    <div class="container">
+    </div>
+  </main>
+  <div id="light" class="white_content">
+    <div>Add new book</div>
+    <form id = "form">
+      <div class="title">
+        <input type="text" id = "title" placeholder="Title" required/>
+        <div id = "title-check" class = "check">* Please fill out this field</div>
+      </div> 
+      <div class="author">
+        <input id = "author" type="text" placeholder="Author" required/>
+        <div id = "author-check" class = "check">* Please fill out this field</div>
+      </div>
+      <div class="pages">
+        <input id = "pages" type="number" placeholder="Pages" required/><br>
+        <div id = "pages-check" class = "check">* Please fill out this field</div>
+      </div>
+      <div class="checkboxes">
+        <label for="checkbox">Have you read it?</label>
+        <input id = "read" type="checkbox" required/>
+      </div>
+      <input id = "submit" type="submit" value = "Submit"/>
+    </form> 
+  </div>
+  <div id="fade" class="black_overlay"></div>
+  <script src = "script.js"></script>
+</body>
+</html>
